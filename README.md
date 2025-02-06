@@ -23,8 +23,6 @@ The project analyzes co-purchasing patterns in the Amazon Product Graph Dataset 
 
   $$C_n(v) = \\sum \\frac{\\sigma_s(v)}{\\sigma_a}$$  
 
-  - Where **\\(\\sigma_s(v)\\)** is the number of shortest paths passing through node **v**.  
-  - **\\(\\sigma_a\\)** is the total number of shortest paths between nodes. 
 - **Clustering Coefficient**: Indicates genre-based communities.  
 
 ### Visualization
@@ -47,9 +45,7 @@ The project analyzes co-purchasing patterns in the Amazon Product Graph Dataset 
 ## Recommendation System
 - **Graph Structure**: Nodes = books, edges = co-purchases, edge weights = Jaccard similarity.  
 - **Jaccard Similarity**:  
-  **
-  J(A, B) = \frac{|A \cap B|}{|A \cup B|}
-  **
+  $$J(A, B) = \\frac{|A \\cap B|}{|A \\cup B|}$$ 
 - **Recommendation Workflow**:  
   1. Calculate neighbors of purchased book.  
   2. Sort by average rating and total reviews.  
@@ -75,8 +71,11 @@ The project analyzes co-purchasing patterns in the Amazon Product Graph Dataset 
 ---
 
 ## Evaluation Metrics
-- **Accuracy**: \( \frac{TP + TN}{TP + TN + FP + FN} \)  
-- **MSE**: \( \frac{1}{n} \sum_{i=1}^{n} (y_i - y_i')^2 \)  
+- **Accuracy**:  
+  $$Accuracy = \\frac{TP + TN}{TP + TN + FP + FN}$$  
+
+- **Mean Squared Error (MSE)**:  
+  $$MSE = \\frac{1}{n} \\sum (y_i - y_i')^2$$ 
 - **ROC AUC**: Area under the TPR-FPR curve.  
 
 ---
