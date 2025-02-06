@@ -20,9 +20,9 @@ The project analyzes co-purchasing patterns in the Amazon Product Graph Dataset 
 ### Key Metrics
 - **Degree Centrality**: Identifies frequently co-purchased products. Top node: `8`.  
 - **Betweenness Centrality**: Measures bridge nodes. Formula:  
-  \[
+  **
   C_{n}(v) = \sum_{s \neq v} \frac{\sigma_{s}(v)}{\sigma_{a}}
-  \]  
+  **
 - **Clustering Coefficient**: Indicates genre-based communities.  
 
 ### Visualization
@@ -45,9 +45,9 @@ The project analyzes co-purchasing patterns in the Amazon Product Graph Dataset 
 ## Recommendation System
 - **Graph Structure**: Nodes = books, edges = co-purchases, edge weights = Jaccard similarity.  
 - **Jaccard Similarity**:  
-  \[
+  **
   J(A, B) = \frac{|A \cap B|}{|A \cup B|}
-  \]  
+  **
 - **Recommendation Workflow**:  
   1. Calculate neighbors of purchased book.  
   2. Sort by average rating and total reviews.  
