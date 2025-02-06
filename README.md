@@ -20,9 +20,11 @@ The project analyzes co-purchasing patterns in the Amazon Product Graph Dataset 
 ### Key Metrics
 - **Degree Centrality**: Identifies frequently co-purchased products. Top node: `8`.  
 - **Betweenness Centrality**: Measures bridge nodes. Formula:  
-  $$
-  C_{n}(v) = \sum_{s \neq v} \frac{\sigma_{s}(v)}{\sigma_{a}}
-  $$
+
+  $$C_n(v) = \\sum \\frac{\\sigma_s(v)}{\\sigma_a}$$  
+
+  - Where **\\(\\sigma_s(v)\\)** is the number of shortest paths passing through node **v**.  
+  - **\\(\\sigma_a\\)** is the total number of shortest paths between nodes. 
 - **Clustering Coefficient**: Indicates genre-based communities.  
 
 ### Visualization
